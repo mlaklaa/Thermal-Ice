@@ -2,6 +2,24 @@
 
 Sistema compatto di monitoraggio e controllo termico a circuito chiuso realizzato con microcontrollore **Arduino Nano (ATmega328P)**, sensore analogico di temperatura (NTC) e stadio di attuazione con relè per il pilotaggio di carichi di raffreddamento.
 
+##  Il Problema e l'Idea (Background)
+
+Il progetto nasce da un'esigenza pratica quotidiana: il surriscaldamento degli smartphone (in particolare iPhone) durante l'uso intenso o la ricarica rapida, fenomeno che attiva le protezioni termiche di sistema interrompendo la ricarica della batteria finché il dispositivo non torna a una temperatura normale.
+
+L'idea alla base di **Thermal Ice** è il prototipo per una **cover intelligente/docking station attiva** in grado di monitorare costantemente la temperatura dello chassis del telefono e avviare automaticamente un flusso d'aria di raffreddamento solo quando necessario, preservando la salute della batteria e garantendo la continuità della ricarica.
+Le soglie di 26°C e 24°C sono state scelte come valori dimostrativi per la simulazione, ma possono essere facilmente ricalibrate a 32–35°C per l'uso su smartphone reale.
+
+##  Ulteriori Ambiti di Applicazione
+
+Sebbene concepito come prototipo per il raffreddamento attivo di smartphone e docking station, l'architettura a circuito chiuso è modulare e facilmente estendibile ad altri scenari:
+* **Micro-server e apparati di rete:** Raffreddamento on-demand per Raspberry Pi, NAS o cabinet per modem/switch di rete.
+* **Mobili multimediali e audio/video:** Estrazione termica automatica per armadietti chiusi contenenti console o sintoamplificatori.
+* **Monitoraggio pacchi batteria:** Protezione termica per celle al litio durante cicli di ricarica ad alta potenza.
+* **Incubatori o mini-serre:** Regolazione termica per ambienti controllati (mediante ventola di ricircolo o elemento riscaldante).
+
+https://github.com/user-attachments/assets/000096b2-89ce-4159-8a7f-facddce9eca9
+
+
 ---
 
 ##  Funzionamento e Logica di Controllo
