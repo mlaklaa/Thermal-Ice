@@ -43,12 +43,13 @@ Per prevenire repentine oscillazioni di commutazione (*chattering*) in prossimit
 Nel terminale del progetto:
 ```bash
 pio run
+```
+
 Simulazione su Wokwi
 Apri la Command Palette di VS Code (Ctrl + Shift + P o F1).
 
 Digita ed esegui:
 
-Plaintext
 Wokwi: Start Simulator
 Clicca sul corpo del sensore NTC per variare la temperatura e osservare l'intervento del relè (LED1) e del LED di stato a bordo (L / pin 13).
 
